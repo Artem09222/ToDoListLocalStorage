@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="form__for__students" onsubmit="saveToLocalStorageStudents()">
+      <label
+        ><input
+          type=""
+          placeholder="Ввести в локальне сховище..."
+          class="inputA"
+          name="inputName"
+      /></label>
+      <!-- <button class="deleteStudent">Delete</button> -->
+      <br>
+      <label
+        ><input
+          type="text"
+          placeholder="Write your name and surname..."
+          class="name__and__surname"
+      /></label>
+      <!-- <button class="deleteStudent">Delete</button> -->
+      <br>
+      <label
+        ><input type="text" placeholder="Write your subject..." class="subject"
+      /></label>
+      <!-- <button class="deleteStudent">Delete</button> -->
+      <br>
+      <button type="submit" class="btnA">LocalStorage</button>
+    </form>
+
+    <div id="studentListContainer">
+        <h2>Student List</h2>
+        <ul id="studentList">
+        </ul>
+      </div>
+      <script src="./main.js"></script>
+  </body>
+</html>
